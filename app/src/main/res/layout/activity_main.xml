@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/familyicon"
+
+
+
+        />
+
+    <EditText
+        android:id="@+id/username_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/edittext_background"
+        android:layout_below="@id/logo"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/password_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/edittext_background"
+        android:layout_below="@id/username_edittext"
+        android:layout_marginTop="16dp"
+        android:inputType="textPassword"
+        android:hint="Password" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_edittext"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/login_btn"
+        android:text="Login" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/create_account_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_button"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_background"
+        android:text="Create New Account" />
+
+</RelativeLayout>

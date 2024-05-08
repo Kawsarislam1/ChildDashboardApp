@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        >
+        <TextView
+            android:id="@+id/parent_name_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:hint="Parent Profile" />
+
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/familyicon"
+            android:layout_below="@id/parent_name_edittext"
+
+
+
+            />
+
+        <EditText
+            android:id="@+id/last_name_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittext_background"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="10dp"
+
+            android:hint="Last Name" />
+
+        <!-- Add other EditTexts for first name, email address, password, phone number, and switches -->
+        <EditText
+            android:id="@+id/first_name_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittext_background"
+            android:layout_below="@+id/last_name_edittext"
+            android:hint="First Name" />
+
+        <EditText
+            android:id="@+id/user_name_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittext_background"
+            android:layout_below="@+id/first_name_edittext"
+            android:hint="User Name" />
+
+        <EditText
+            android:id="@+id/email_address_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittext_background"
+            android:layout_below="@+id/user_name_edittext"
+            android:hint="Email Address" />
+
+        <EditText
+            android:id="@+id/phone_number_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittext_background"
+            android:layout_below="@+id/email_address_edittext"
+            android:hint="Phone Number" />
+
+        <Switch
+            android:id="@+id/push_notification_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allow Push Notification"
+            android:layout_margin="5dp"
+            android:layout_below="@id/phone_number_edittext"
+            android:layout_marginTop="16dp"/>
+
+        <Switch
+            android:id="@+id/allow_sms_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allow SMS Notification"
+            android:layout_margin="5dp"
+            android:layout_below="@id/push_notification_switch"
+            android:layout_marginTop="16dp"/>
+
+        <Switch
+            android:id="@+id/allow_camera_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allow Camera Access"
+            android:layout_margin="5dp"
+            android:layout_below="@id/allow_sms_switch"
+            android:layout_marginTop="16dp"/>
+
+        <Switch
+            android:id="@+id/allow_location_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allow Location Services"
+            android:layout_margin="5dp"
+            android:layout_below="@id/allow_camera_switch"
+            android:layout_marginTop="16dp"/>
+
+        <Switch
+            android:id="@+id/allow_email_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allow Email Notifications"
+            android:layout_margin="5dp"
+            android:layout_below="@id/allow_location_switch"
+            android:layout_marginTop="16dp"/>
+
+
+        <EditText
+            android:id="@+id/password_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittext_background"
+            android:layout_below="@+id/allow_email_switch"
+            android:hint="Password" />
+
+        <!-- Add switches for other permissions -->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/edit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password_edittext"
+            android:layout_marginTop="16dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/edittext_background"
+            android:text="Edit" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_button"
+            android:layout_marginTop="8dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/edittext_background"
+            android:text="Save" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/save_button"
+            android:layout_marginTop="8dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/edittext_background"
+            android:text="Cancel" />
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>
